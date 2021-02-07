@@ -32,6 +32,8 @@
     </c:if>
     <label for="name">Name</label>
     <input type="text" name="name" id="name">
+    <label for="season">Season</label>
+    <input type="text" name="season" id="season">
     <label for="yearOfPublication">Year of publication</label>
     <input type="text" name="yearOfPublication" id="yearOfPublication">
     <label for="overed">Overed</label>

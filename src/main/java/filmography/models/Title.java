@@ -4,13 +4,35 @@ package filmography.models;
     Класс модели, описывает данные, которыми будем оперировать.
  */
 
+import javax.persistence.*;
+
+@Entity
+@Table(name = "titles")
 public class Title {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     private int id;
+
+    @Column(name = "name")
     private String name;
+
+    @Column(name = "season")
+    private int season;
+
+    @Column(name = "year_of_publication")
     private int yearOfPublication;
+
+    @Column(name = "overed")
     private boolean overed;
+
+    @Column(name = "genre")
     private String genre;
+
+    @Column(name = "watched")
     private boolean watched;
+
+    public Title(){}
 
     public int getId() {
         return id;
@@ -22,6 +44,14 @@ public class Title {
 
     public String getName() {
         return name;
+    }
+
+    public int getSeason() {
+        return season;
+    }
+
+    public void setSeason(int season) {
+        this.season = season;
     }
 
     public void setName(String name) {
@@ -65,6 +95,7 @@ public class Title {
         return "Title{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
+                ", season=" + season +
                 ", yearOfPublication=" + yearOfPublication +
                 ", overed=" + overed +
                 ", genre='" + genre + '\'' +

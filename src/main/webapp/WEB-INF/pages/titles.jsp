@@ -17,9 +17,10 @@
         <tr>
             <th>id</th>
             <th>name</th>
-            <th>genre</th>
+            <th>season</th>
             <th>year of publication</th>
             <th>overed</th>
+            <th>genre</th>
             <th>watched</th>
             <th>action</th>
         </tr>
@@ -27,9 +28,10 @@
             <tr>
                 <td>${title.id}</td>
                 <td>${title.name}</td>
-                <td>${title.genre}</td>
+                <td>${title.season}</td>
                 <td>${title.yearOfPublication}</td>
                 <td>${title.overed}</td>
+                <td>${title.genre}</td>
                 <td>${title.watched}</td>
                 <td>
                     <a href="/edit/${title.id}">edit</a>
