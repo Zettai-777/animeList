@@ -1,0 +1,11 @@
+table {
+    border-spacing: 0 10px;
+    font: bold 100% "Times New Roman", sans-serif;
+    margin: 40px auto;
+    text-shadow: 5px 5px 5px #3F3F7F;
+    background: cornsilk;
+    text-align: center;
+    vertical-align: middle;
+    width: 50%;
+    border: 5px silver;
+}

@@ -10,7 +10,9 @@
 <html>
 <head>
     <title>TITLES</title>
+    <link href="<c:url value="/res/style.css"/>" rel="stylesheet" type="text/css">
 </head>
+
 <body>
     <h2>Titles</h2>
     <table>
